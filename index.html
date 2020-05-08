@@ -16,11 +16,10 @@ height: 50px;
 
 }
 .item4 { grid-area: header; 
-height: 460px;
+height: 1000px;
 
 }
 
-.item4 mySlides {display:none;}
 
 
 .item5 { grid-area: main; 
@@ -47,10 +46,16 @@ height: 360px;
 #welcome {
 text-align: center;
 }
-#mobnumber {
 
-
-
+.item4 {
+  display: inline-grid;
+  grid-template-areas:
+    'product1 product2 product3 product4 product5';
+  grid-gap: 50px;
+  background-color:     #ffffff;
+  padding: 5px;
+  margin:100;
+  width: 100%;
 }
 
 
@@ -71,30 +76,21 @@ text-align: center;
 
 
   <div class="item4">
-<div class="w3-content w3-section" style="max-width:500px" "max-height: 250px">
-  <img class="mySlides" src="1.jpg" style="width:100%">
-  <img class="mySlides" src="2.jpg" style="width:100%">
-  <img class="mySlides" src="3.jpg" style="width:100%">
-  <img class="mySlides" src="4.jpg" style="width:100%">
-  <img class="mySlides" src="5.jpg" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+    <img class="product1" src="1.jpg" style="width:100%">
+    <img class="product2" src="2.jpg" style="width:100%">
+    <img class="product3" src="3.jpg" style="width:100%">
+    <img class="product4" src="4.jpg" style="width:100%">
+    <img class="product5" src="5.jpg" style="width:100%">
+    <img class="product6" src="5.jpg" style="width:100%">
+    <img class="product7" src="4.jpg" style="width:100%">
+    <img class="product8" src="3.jpg" style="width:100%">
+    <img class="product9" src="2.jpg" style="width:100%">
+    <img class="product10" src="1.jpg" style="width:100%">
+    <img class="product11" src="2.jpg" style="width:100%">
+    <img class="product12" src="3.jpg" style="width:100%">
+    <img class="product13" src="4.jpg" style="width:100%">
+    <img class="product14" src="5.jpg" style="width:100%">
+    <img class="product15" src="1.jpg" style="width:100%">
 
 
   </div>
