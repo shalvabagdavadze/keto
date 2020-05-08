@@ -16,9 +16,13 @@ height: 50px;
 
 }
 .item4 { grid-area: header; 
-height: 360px;
+height: 460px;
 
 }
+
+.item4 mySlides {display:none;}
+
+
 .item5 { grid-area: main; 
 background-color:  #f5f5f0;
 height: 360px;
@@ -44,7 +48,8 @@ height: 360px;
 text-align: center;
 }
 #mobnumber {
-   
+
+
 
 }
 
@@ -63,10 +68,42 @@ text-align: center;
     <img id="mobile" src="mobile-icon.png" width="50px" height="50px">
     593 10 31 91
   <div class="item3">Menu</div>
-  <div class="item4">Header</div>
+
+
+  <div class="item4">
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+  <img class="mySlides" src="4.jpg" style="width:100%">
+  <img class="mySlides" src="5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  </div>
   <div class="item5">Main</div>  
     <div class="item6">Footer</div>
 </div>
+  
+</div>
+
 
 </body>
 </html>
