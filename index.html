@@ -11,10 +11,10 @@
             display:grid;
             grid-template-areas: 
                 'top     top     top     top    top     top     top'
-                'header  header  header  header header  header  header'
+                'header  header  header  header header  header   header'
                 'nav     nav     nav     nav    nav     nav     nav'
-                'left    main    main    main   main    main    main'
-                'left    other   other   other  other   other   other'
+                'left    left   main    main   main    right    right'
+                'left    left   other   other  other   right   right'
                 'footer  footer  footer  footer footer  footer  footer'
         }
 
@@ -139,7 +139,7 @@
        /* style of left */
        .left {
         grid-area: left;
-        background-color: #b1f1fe;
+        background-color: #FFFFFF;
         padding: 10px;
        }
 
@@ -151,11 +151,18 @@
         width:100%;
        }
 
-     
+        /* style of right sectiont */
+       .right {
+        grid-area: right;
+        background-color: #FFFFFF;
+        padding: 10px;
+       }
+
+
        /* style of other sectiont */
        .other {
         grid-area: other;
-        background-color: #a1f1f1;
+        background-color: #FFFFFF;
         padding: 10px;
        }
 
@@ -221,59 +228,60 @@
             <ul>
                  <li><a href="#home">ALL PRODUCTS</a></li>
                  <li><a href="#news">SUPPLEMENTS</a></li>
-                 <li><a href="#contact">PACKAGES/KITS</a></li>
-                 <li><a href="#about">POWDERS</a></li>
-                 <li><a href="#about">BOOKS</a></li>
-                 <li><a href="#about">DIGITAL PROGRAMS</a></li>
-                 <li><a href="#about">DEVICES</a></li>
+                 
                  <li><a href="#about">DESSERTS</a></li>
-                 <li><a href="#about">SUMMIT</a></li>
+                 
                  <li><a href="#about">IMMUNE</a></li>
             </ul>
         </div>
 
         <!-- left section -->
         <div class="left">
-            <p>left</p>
+            <p></p>
         </div>
 
         <!-- main section -->
         <div class="main">
 
             <div class="order1">
-               <img src="BARNEY/barney-main.jpg" style="width: 80%"> 
+               <img src="BARNEY/barney-main.jpg" style="width: 80%" height="200px"> 
             </div>
 
             <div class="order2">
-                <img src="Jans/jans-main.jpg" style="width: 80%">
+                <img src="Jans/jans-main.jpg" style="width: 80%" height="200px">
             </div>
 
             <div class="order3">
-                <img src="Keto Pancake & Waffle/keto pancake waffle-main.jpg" style="width: 80%">
+                <img src="Keto Pancake & Waffle/keto pancake waffle-main.jpg" style="width: 80%" height="200px">
             </div>
 
             <div class="order4">
-                <img src="Psyllium Husk Powder/psyllium husk powder-main.jpg" style="width: 80%">
+                <img src="Psyllium Husk Powder/psyllium husk powder-main.jpg" style="width: 80%" height="200px">
             </div>
 
             <div class="order5">
-                <img src="Sweetener/Sweetener-main.jpg" style="width: 80%">
+                <img src="Sweetener/Sweetener-main.jpg" style="width: 80%" height="200px">
             </div>
 
             <div class="order6">
-                <img src="watkins/watkins-main.jpg" style="width: 80%">
+                <img src="watkins/watkins-main.jpg" style="width: 80%" height="200px">
             </div>
 
         </div>
 
         <!-- right section -->
+        <div class="right">
+            <p></p>
+        </div>
+
+        <!-- other section -->
         <div class="other">
-            <p>other</p>
+            <p></p>
         </div>
 
         <!-- footer section -->
         <div class="footer">
-            <p>footer</p>
+            <p></p>
         </div>
 
     </div>
