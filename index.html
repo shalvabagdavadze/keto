@@ -1,105 +1,282 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-.item1 { grid-area: welcome; 
-background-color: #ff6600;
-height: 40px;
-}
-.item2 { grid-area: contact; 
-background-color: #ffffff;
-height: 85px;
-}
-.item3 { grid-area: menu; 
-background-color:  #00cccc;
-height: 50px;
+    <title>KETO SHOP GEORGIA</title>
 
-}
-.item4 { grid-area: header; 
-height: 1000px;
+    <style type="text/css">
+       
+        /* the grid container */
+        .grid-container {
+            display:grid;
+            grid-template-areas: 
+                'top     top     top     top    top     top     top'
+                'header  header  header  header header  header  header'
+                'nav     nav     nav     nav    nav     nav     nav'
+                'left    main    main    main   main    main    main'
+                'left    other   other   other  other   other   other'
+                'footer  footer  footer  footer footer  footer  footer'
+        }
 
-}
+        /* the top container */
+        .top {
+            display:grid;
+            grid-template-areas: 
+            'welcome sign socicons'
+        }
 
-
-
-.item5 { grid-area: main; 
-background-color:  #f5f5f0;
-height: 360px;
-}
-.item6 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'welcome welcome welcome welcome welcome welcome'
-    'contact contact contact contact contact contact'
-    'menu menu menu menu menu menu'
-    'header header header header header header'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-  grid-gap: 0px;
-  background-color: #ffffff;
-  padding: 0px;
-  margin:0;
-}
-
-#welcome {
-text-align: center;
-}
-
-.item4 {
-  display: inline-grid;
-  grid-template-areas:
-    'product1 product2 product3 product4 product5';
-  grid-gap: 50px;
-  background-color:     #ffffff;
-  padding: 5px;
-  margin:100;
-  width: 100%;
-}
+        /* the main container */
+        .main {
+                display:grid;
+                grid-template-areas: 
+                'order1    order2   order3   order4   order5    order6'
+        }
 
 
-</style>
+         /* the header container */
+        .header {
+            display:grid;
+            grid-template-areas: 
+            'logo contact delivery'
+        }
+
+
+         /* style of welcome section */
+       .order1 {
+            grid-area: order1;
+            background-color: #FFFFFF   ;
+            padding: 0px;
+            
+       }
+
+       .order2 {
+            grid-area: order2;
+            background-color: #FFFFFF   ;
+            padding: 0px;
+            
+       }
+
+        .order3 {
+            grid-area: order3;
+            background-color:#FFFFFF    ;
+            padding: 0px;
+            
+       }
+
+        .order4 {
+            grid-area: order4;
+            background-color: #FFFFFF   ;
+            padding: 0px;
+            
+       }
+
+        .order5 {
+            grid-area: order5;
+            background-color: #FFFFFF   ;
+            padding: 0px;
+           
+       }
+
+        .order6 {
+            grid-area: order6;
+            background-color: #FFFFFF   ;
+            padding: 0px;
+            
+       }
+
+
+       /* style of welcome section */
+       .top {
+            grid-area: top;
+            background-color: #FF7F50;
+            padding: 0px;
+            
+       }
+
+
+       /* style of header section*/
+       .header {
+            grid-area: header;
+            background-color: #FFFFFF;
+            padding: 0px;
+            width:100%;
+       }
+
+       /* style the nav */
+       .nav {
+            grid-area: nav;
+            background-color: #00CED1   ;
+            padding: 0px;
+       }
+
+       ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 0px solid #e7e7e7;
+            background-color: #00CED1   ;
+        }
+
+        li {
+             float: left;
+        }
+
+        li a {
+             display: block;
+             color: #FFFFFF ;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #FF7F50;
+        }
+
+
+
+       /* style of left */
+       .left {
+        grid-area: left;
+        background-color: #b1f1fe;
+        padding: 10px;
+       }
+
+       /* style of main */
+       .main {
+        grid-area: main;
+        background-color: #FFFFFF   ;
+        padding: 10px;
+        width:100%;
+       }
+
+     
+       /* style of other sectiont */
+       .other {
+        grid-area: other;
+        background-color: #a1f1f1;
+        padding: 10px;
+       }
+
+       /* style of footer */
+       .footer {
+        grid-area: footer;
+        background-color: #d1f1f1;
+        padding: 10px;
+       }
+
+    </style>
+
+
+
+    
 </head>
 <body>
+    <div class="grid-container">
+        
+        <!-- welcome section -->
+        <div class="top">
+
+            <!-- welcome -->
+            <div class="welcome">
+                <p id="welcome"> Welcome to Health & Wellness Online Store </p>
+            </div>
+
+            <!-- sign -->
+            <div class="sign">
+                <p id="sign"> Sign in or Register </p>
+            </div>
+
+            <!-- socicon -->
+            <div class="socicons">
+                <p id="socicons">F L Y</p>
+            </div> 
 
 
-<div class="grid-container">
-  <div class="item1">
-    <p id="welcome">Welcome to Health & Wellness Online Store </p>
-  </div>
-  <div class="item2">
-    <img id="logo" src="LOGO.jpg">
-    <img id="mobile" src="mobile-icon.png" width="50px" height="50px">
-    593 10 31 91
-  <div class="item3">Menu</div>
+        </div> <!-- end of welcome section -->
 
+        <!-- header section -->
+        <div class="header">
 
-  <div class="item4">
-    <img class="product1" src="1.jpg" style="width:100%">
-    <img class="product2" src="2.jpg" style="width:100%">
-    <img class="product3" src="3.jpg" style="width:100%">
-    <img class="product4" src="4.jpg" style="width:100%">
-    <img class="product5" src="5.jpg" style="width:100%">
-    <img class="product6" src="5.jpg" style="width:100%">
-    <img class="product7" src="4.jpg" style="width:100%">
-    <img class="product8" src="3.jpg" style="width:100%">
-    <img class="product9" src="2.jpg" style="width:100%">
-    <img class="product10" src="1.jpg" style="width:100%">
-    <img class="product11" src="2.jpg" style="width:100%">
-    <img class="product12" src="3.jpg" style="width:100%">
-    <img class="product13" src="4.jpg" style="width:100%">
-    <img class="product14" src="5.jpg" style="width:100%">
-    <img class="product15" src="1.jpg" style="width:100%">
+            <!-- logo section -->
+            <div class="logo">
+                <p id="logo">KETO SHOP GEORGIA</p>
+            </div>
 
+            <!-- contact section -->
+            <div class="contact">
+                <p id="contact">mail and mobile</p>
+            </div>
 
-  </div>
-  <div class="item5">Main</div>  
-    <div class="item6">Footer</div>
-</div>
-  
-</div>
+            <!-- delivery section -->
+            <div class="delivery">
+                <p id="delivery">Free shipping for orders over 150 GEL</p>
+            </div>
 
+        </div> <!-- END OF HEADER SECTION -->
+
+        <!-- nav section -->
+        <div class="nav">
+            <ul>
+                 <li><a href="#home">ALL PRODUCTS</a></li>
+                 <li><a href="#news">SUPPLEMENTS</a></li>
+                 <li><a href="#contact">PACKAGES/KITS</a></li>
+                 <li><a href="#about">POWDERS</a></li>
+                 <li><a href="#about">BOOKS</a></li>
+                 <li><a href="#about">DIGITAL PROGRAMS</a></li>
+                 <li><a href="#about">DEVICES</a></li>
+                 <li><a href="#about">DESSERTS</a></li>
+                 <li><a href="#about">SUMMIT</a></li>
+                 <li><a href="#about">IMMUNE</a></li>
+            </ul>
+        </div>
+
+        <!-- left section -->
+        <div class="left">
+            <p>left</p>
+        </div>
+
+        <!-- main section -->
+        <div class="main">
+
+            <div class="order1">
+               <img src="BARNEY/barney-main.jpg" style="width: 80%"> 
+            </div>
+
+            <div class="order2">
+                <img src="Jans/jans-main.jpg" style="width: 80%">
+            </div>
+
+            <div class="order3">
+                <img src="Keto Pancake & Waffle/keto pancake waffle-main.jpg" style="width: 80%">
+            </div>
+
+            <div class="order4">
+                <img src="Psyllium Husk Powder/psyllium husk powder-main.jpg" style="width: 80%">
+            </div>
+
+            <div class="order5">
+                <img src="Sweetener/Sweetener-main.jpg" style="width: 80%">
+            </div>
+
+            <div class="order6">
+                <img src="watkins/watkins-main.jpg" style="width: 80%">
+            </div>
+
+        </div>
+
+        <!-- right section -->
+        <div class="other">
+            <p>other</p>
+        </div>
+
+        <!-- footer section -->
+        <div class="footer">
+            <p>footer</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
