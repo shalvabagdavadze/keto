@@ -2,289 +2,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KETO SHOP GEORGIA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <style type="text/css">
-       
-        /* the grid container */
-        .grid-container {
-            display:grid;
-            grid-template-areas: 
-                'top     top     top     top    top     top     top'
-                'header  header  header  header header  header   header'
-                'nav     nav     nav     nav    nav     nav     nav'
-                'left    left   main    main   main    right    right'
-                'left    left   other   other  other   right   right'
-                'footer  footer  footer  footer footer  footer  footer'
-        }
+    <title>card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        /* the top container */
-        .top {
-            display:grid;
-            grid-template-areas: 
-            'welcome sign socicons'
-        }
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-        /* the main container */
-        .main {
-                display:grid;
-                grid-template-areas: 
-                'order1    order2   order3   order4   order5    order6'
-        }
-
-
-         /* the header container */
-        .header {
-            display:grid;
-            grid-template-areas: 
-            'logo contact delivery'
-        }
-
-
-         /* style of welcome section */
-       .order1 {
-            grid-area: order1;
-            background-color: #FFFFFF   ;
-            padding: 0px;
-            
-       }
-
-       .order2 {
-            grid-area: order2;
-            background-color: #FFFFFF   ;
-            padding: 0px;
-            
-       }
-
-        .order3 {
-            grid-area: order3;
-            background-color:#FFFFFF    ;
-            padding: 0px;
-            
-       }
-
-        .order4 {
-            grid-area: order4;
-            background-color: #FFFFFF   ;
-            padding: 0px;
-            
-       }
-
-        .order5 {
-            grid-area: order5;
-            background-color: #FFFFFF   ;
-            padding: 0px;
-           
-       }
-
-        .order6 {
-            grid-area: order6;
-            background-color: #FFFFFF   ;
-            padding: 0px;
-            
-       }
-
-
-       /* style of welcome section */
-       .top {
-            grid-area: top;
-            background-color: #FF7F50;
-            padding: 0px;
-            
-       }
-
-
-       /* style of header section*/
-       .header {
-            grid-area: header;
-            background-color: #FFFFFF;
-            padding: 0px;
-            width:100%;
-       }
-
-       /* style the nav */
-       .nav {
-            grid-area: nav;
-            background-color: #00CED1   ;
-            padding: 0px;
-       }
-
-       ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            border: 0px solid #e7e7e7;
-            background-color: #00CED1   ;
-        }
-
-        li {
-             float: left;
-        }
-
-        li a {
-             display: block;
-             color: #FFFFFF ;
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #FF7F50;
-        }
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
 
-       /* style of left */
-       .left {
-        grid-area: left;
-        background-color: #FFFFFF;
-        padding: 10px;
-       }
-
-       /* style of main */
-       .main {
-        grid-area: main;
-        background-color: #FFFFFF   ;
-        padding: 10px;
-        width:100%;
-       }
-
-        /* style of right sectiont */
-       .right {
-        grid-area: right;
-        background-color: #FFFFFF;
-        padding: 10px;
-       }
-
-
-       /* style of other sectiont */
-       .other {
-        grid-area: other;
-        background-color: #FFFFFF;
-        padding: 10px;
-       }
-
-       /* style of footer */
-       .footer {
-        grid-area: footer;
-        background-color: #d1f1f1;
-        padding: 10px;
-       }
-
-    </style>
 
 
 
-    
 </head>
 <body>
-    <div class="grid-container">
-        
-        <!-- welcome section -->
-        <div class="top">
 
-            <!-- welcome -->
-            <div class="welcome">
-                <p id="welcome"> Welcome to Health & Wellness Online Store </p>
-            </div>
+<div class="top-nav-bar">
+	<div class="search-box">
+		<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+		<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+		<img src="keto-logo.jpg" class="logo">
+		<input type="text" class="form-contol" >
+		<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+	</div>
+	
+<div class="menu-bar">
+	<ul>
+		<li>
+			<a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>cart</a>
+		</li>
+		<li>
+			<a href="#">Sign up</a>
+		</li>
+		<li>
+			<a href="#">Login</a>
+		</li>
+		
+	</ul>
+</div>
+</div>
 
-            <!-- sign -->
-            <div class="sign">
-                <p id="sign"> Sign in or Register </p>
-            </div>
-
-            <!-- socicon -->
-            <div class="socicons">
-                <p id="socicons">F L Y</p>
-            </div> 
 
 
-        </div> <!-- end of welcome section -->
+<section class="header">
+	<div class="side-menu" id="side-menu">
+		<ul>
+			<li>On Sale<i class="fa fa-angle-right" ></i>
+				<ul>
+					<li>Sub Menu-1</li>
+					<li>Sub Menu-1</li>
+					<li>Sub Menu-1</li>
+					<li>Sub Menu-1</li>
+				</ul>
+			</li>
+			<li>Mobiles<i class="fa fa-angle-right" ></i>
+				<ul>
+					<li>Sub Menu-2</li>
+					<li>Sub Menu-2</li>
+					<li>Sub Menu-2</li>
+					<li>Sub Menu-2</li>
+				</ul>
+			</li>
+			<li>Computers<i class="fa fa-angle-right" ></i>
+				<ul>
+					<li>Sub Menu-3</li>
+					<li>Sub Menu-3</li>
+					<li>Sub Menu-3</li>
+					<li>Sub Menu-3</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 
-        <!-- header section -->
-        <div class="header">
-
-            <!-- logo section -->
-            <div class="logo">
-                <p id="logo">KETO SHOP GEORGIA</p>
-            </div>
-
-            <!-- contact section -->
-            <div class="contact">
-                <p id="contact">mail and mobile</p>
-            </div>
-
-            <!-- delivery section -->
-            <div class="delivery">
-                <p id="delivery">Free shipping for orders over 150 GEL</p>
-            </div>
-
-        </div> <!-- END OF HEADER SECTION -->
-
-        <!-- nav section -->
-        <div class="nav">
-            <ul>
-                 <li><a href="#home">ALL PRODUCTS</a></li>
-                 <li><a href="#news">SUPPLEMENTS</a></li>
-                 
-                 <li><a href="#about">DESSERTS</a></li>
-                 
-                 <li><a href="#about">IMMUNE</a></li>
-            </ul>
-        </div>
-
-        <!-- left section -->
-        <div class="left">
-            <p></p>
-        </div>
-
-        <!-- main section -->
-        <div class="main">
-
-            <div class="order1">
-               <img src="BARNEY/barney-main.jpg" style="width: 99%" height="350px"> 
-            </div>
-
-            <div class="order2">
-                <img src="Jans/jans-main.jpg" style="width: 99%" height="350px">
-            </div>
-
-            <div class="order3">
-                <img src="Keto Pancake & Waffle/keto pancake waffle-main.jpg" style="width: 99%" height="350px">
-            </div>
-
-            <div class="order4">
-                <img src="Psyllium Husk Powder/psyllium husk powder-main.jpg" style="width: 99%" height="350px">
-            </div>
-
-            <div class="order5">
-                <img src="Sweetener/Sweetener-main.jpg" style="width: 99%" height="350px">
-            </div>
-
-            <div class="order6">
-                <img src="watkins/watkins-main.jpg" style="width: 99%" height="350px">
-            </div>
-
-        </div>
-
-        <!-- right section -->
-        <div class="right">
-            <p></p>
-        </div>
-
-        <!-- other section -->
-        <div class="other">
-            <p></p>
-        </div>
-
-        <!-- footer section -->
-        <div class="footer">
-            <p></p>
-        </div>
-
+<div class="slider">
+	<div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="keto-diabet.jpg" class="d-block w-100" >
     </div>
+    <div class="carousel-item">
+      <img src="keto-diabet.jpg" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="keto-diabet.jpg" class="d-block w-100" >
+    </div>
+  </div>
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+    <li data-target="#slider" data-slide-to="2"></li>
+    <li data-target="#slider" data-slide-to="3"></li>
+  </ol>
+</div>
+</div>
+</section>
+
+
+<!----features categories ---- >
+<section class="features-categories">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="keto-diet.png">
+			</div>
+			<div class="col-md-4">
+				<img src="keto-diabet.png">
+			</div>
+			<div class="col-md-4">
+				<img src="cover.png">
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	function openmenu()
+	{
+		document.getElementById("side-menu").style.display="block";
+		document.getElementById("menu-btn").style.display="none";
+		document.getElementById("close-btn").style.display="block";
+	}
+
+	function closemenu()
+	{
+		document.getElementById("side-menu").style.display="none";
+		document.getElementById("menu-btn").style.display="block";
+		document.getElementById("close-btn").style.display="none";
+	}
+
+</script>
 
 </body>
 </html>
